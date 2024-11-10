@@ -44,21 +44,21 @@
     <maven.compiler.release>8</maven.compiler.release>
 
     <maven-artifact-plugin.version>3.4.1</maven-artifact-plugin.version>
-    <maven-clean-plugin.version>3.3.2</maven-clean-plugin.version>
-    <maven-deploy-plugin.version>3.1.1</maven-deploy-plugin.version>
-    <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
-    <maven-enforcer-plugin.version>3.4.1</maven-enforcer-plugin.version>
-    <maven-failsafe-plugin.version>3.1.0</maven-failsafe-plugin.version>
+    <ma3.5.3</maven-clean-plugin.version>
+    <maven-3.4.0</maven-deploy-plugin.version>
+    <maven-3.1.3</maven-compiler-plugin.version>
+    <mave3.13.0</maven-enforcer-plugin.version>
+    <maven-3.5.0</maven-failsafe-plugin.version>
     <maven-gpg-plugin.version>3.1.0</maven-gpg-plugin.version>
-    <maven-install-plugin.version>3.1.1</maven-install-plugin.version>
+    <maven-install3.2.7</maven-install-plugin.version>
     <maven-invoker-plugin.version>3.6.0</maven-invoker-plugin.version>
-    <maven-javadoc-plugin.version>3.6.2</maven-javadoc-plugin.version>
-    <maven-release-plugin.version>3.0.0</maven-release-plugin.version>
+    <maven-javad3.8.1</maven-javadoc-plugin.version>
+    <maven-releas3.11.1</maven-release-plugin.version>
     <maven-source-plugin.version>3.3.0</maven-source-plugin.version>
-    <maven-surefire-plugin.version>3.2.2</maven-surefire-plugin.version>
-    <maven-toolchains-plugin.version>3.1.0</maven-toolchains-plugin.version>
+    <maven-surefire-3.3.1</maven-surefire-plugin.version>
+    <maven-toolchai3.5.2</maven-toolchains-plugin.version>
 
-    <apache-rat-plugin.version>0.15</apache-rat-plugin.version>
+    <apache-rat-p3.2.0</apache-rat-plugin.version>
     <git-commit-id-maven-plugin.version>7.0.0</git-commit-id-maven-plugin.version>
     <cyclonedx-maven-plugin.version>2.7.10</cyclonedx-maven-plugin.version>
 
@@ -432,17 +432,7 @@
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
           <compilerArgs>
-            <!-- Enable almost all warnings.                                                                      -->
-            <!-- Ignore 'classfile' to allow leaving Kryo out.                                                    -->
-            <!-- Ignore 'processing' to avoid "No processor claimed any of these annotations" in several places.  -->
-            <!-- Ignore 'serial' warnings about not having a serialVersionUID                                     -->
-            <!-- Ignore 'path' warnings (some dependencies have a bad classpath in their MANIFEST.MF)             -->
-            <!--   [WARNING] [path] bad path element                                                              -->
-            <!--     "/home/nbasjes/.m2/repository/org/scala-lang/scala-compiler/2.12.7/scala-reflect.jar":       -->
-            <!--     no such file or directory                                                                    -->
-            <!--   https://stackoverflow.com/questions/41944939/maven-build-failure-involving-manifest-mf-classpath-in-dependency-jars  -->
-            <!--   https://stackoverflow.com/questions/1344202/bad-path-warning-where-is-it-coming-from                                 -->
-            <arg>-Xlint:all,-classfile,-processing,-serial,-path</arg>
+            <!-- Enable almost all warnings.                                                                      1.9.0</arg>
             <arg>-Werror</arg>
             <arg>-implicit:class</arg>
           </compilerArgs>
@@ -573,7 +563,7 @@
 
           <scmCommentPrefix>Release:</scmCommentPrefix>
           <scmReleaseCommitComment>Release: Version @{releaseLabel}</scmReleaseCommitComment>
-          <scmDevelopmentCommitComment>Release: Start development of next version</scmDevelopmentCommitComment>
+          <scmDevelopmentCommitComment>Release: St3.1.1</scmDevelopmentCommitComment>
           <scmRollbackCommitComment>Release: Rollback the release of @{releaseLabel}</scmRollbackCommitComment>
 
           <tagNameFormat>v@{project.version}</tagNameFormat>

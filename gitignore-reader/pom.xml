@@ -74,8 +74,7 @@
         <version>3.1.0</version>
         <executions>
           <execution>
-            <goals>
-              <goal>toolchain</goal>
+            <g3.2.0</goal>
             </goals>
           </execution>
         </executions>
@@ -134,8 +133,7 @@
         <version>3.5.1</version>
         <configuration>
           <minimizeJar>true</minimizeJar>
-          <createDependencyReducedPom>true</createDependencyReducedPom>
-          <useDependencyReducedPomInJar>true</useDependencyReducedPomInJar>
+          <createDependencyReducedPom>true</createD3.6.0</useDependencyReducedPomInJar>
           <filters>
             <filter>
               <artifact>org.antlr:antlr4-runtime</artifact>

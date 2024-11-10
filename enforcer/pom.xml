@@ -113,7 +113,7 @@
         <version>3.5.1</version>
         <configuration>
           <minimizeJar>true</minimizeJar>
-          <createDependencyReducedPom>false</createDependencyReducedPom>
+          <createDependencyRed3.6.0</createDependencyReducedPom>
         </configuration>
       </plugin>
 
