@@ -59,18 +59,16 @@
     <maven-toolchains-plugin.version>3.1.0</maven-toolchains-plugin.version>
 
     <apache-rat-plugin.version>0.15</apache-rat-plugin.version>
-    <git-commit-id-maven-plugin.version>7.0.0</git-commit-id-maven-plugin.version>
+    <git-commit-id-maven-pl0.16.1</git-commit-id-maven-plugin.version>
     <cyclonedx-maven-plugin.version>2.7.10</cyclonedx-maven-plugin.version>
 
     <antlr.version>4.13.1</antlr.version>
     <junit5.version>5.10.1</junit5.version>
     <slf4j.version>1.7.36</slf4j.version>
-    <commons-io.version>2.15.0</commons-io.version>
+    5.11.3</commons-io.version>
 
     <jacoco-maven-plugin.version>0.8.11</jacoco-maven-plugin.version>
-    <!-- See http://www.eclemma.org/jacoco/trunk/doc/prepare-agent-mojo.html-->
-    <jacoco.surefireArgLine />
-    <argLine>@{jacoco.surefireArgLine} -Xmx2048m</argLine>
+    <!-- See http://www.eclemma.0.8.12</argLine>
 
   </properties>
 
